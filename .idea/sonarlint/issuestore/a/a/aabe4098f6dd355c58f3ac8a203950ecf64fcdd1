@@ -1,0 +1,8 @@
+
+upython:S107½"XMethod "plot_multiple_series" has 10 parameters, which is greater than the 7 authorized.(½µ¯ÿÿÿÿÿ
+gpython:S107Ó"OMethod "plot_series" has 10 parameters, which is greater than the 7 authorized.(ƒÀ×à
+6python:S125L"Remove this commented out code.(½ÒşŒ
+7python:S125ù"Remove this commented out code.(©Ş‰Ù
+mpython:S3776Ø"TRefactor this function to reduce its Cognitive Complexity from 43 to the 15 allowed.(èÊ İ
+rpython:S3776İ"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(Í«Îòúÿÿÿÿ
+@python:S1481º"(Remove the unused local variable "logy".(ï¢âZ

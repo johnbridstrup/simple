@@ -1,0 +1,17 @@
+
+;python:S125."Remove this commented out code.(òç˜¶ùÿÿÿÿ
+7python:S125Ì"Remove this commented out code.(ÀØè—
+mpython:S3776ë"TRefactor this function to reduce its Cognitive Complexity from 21 to the 15 allowed.(³Ø–
+gpython:S101L"PRename class "N_Molecular" to match the regular expression ^[A-Z_][a-zA-Z0-9]+$.(‰Çğ«
+mpython:S101a"VRename class "default_transform" to match the regular expression ^[A-Z_][a-zA-Z0-9]+$.(¹ÆÖ†
+npython:S101„"QRename class "betterKernel" to match the regular expression ^[A-Z_][a-zA-Z0-9]+$.(æİÿîüÿÿÿÿ
+Mpython:S1656À"/Remove or correct this useless self-assignment.(¡œË“ÿÿÿÿÿ
+qpython:S117	"URename this parameter "Exception" to match the regular expression ^[_a-z][a-z0-9_]*$.(óºÖ·øÿÿÿÿ
+lpython:S117"URename this parameter "RateError" to match the regular expression ^[_a-z][a-z0-9_]*$.(—„™€
+qpython:S117"URename this parameter "RateError" to match the regular expression ^[_a-z][a-z0-9_]*$.(·«¨£üÿÿÿÿ
+dpython:S117$"MRename this parameter "M" to match the regular expression ^[_a-z][a-z0-9_]*$.(ï«Ùİ
+dpython:S117M"MRename this parameter "M" to match the regular expression ^[_a-z][a-z0-9_]*$.(×ôş§
+opython:S1542	"RRename function "RateError" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(óºÖ·øÿÿÿÿ
+mpython:S1542"URename function "NoRatesError" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(—„™€
+xpython:S1542"[Rename function "RateTransformError" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(·«¨£üÿÿÿÿ
+4python:S1700ì"Rename field "propensities"(×Ş½ù

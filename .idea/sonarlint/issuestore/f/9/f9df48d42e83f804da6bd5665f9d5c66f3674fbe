@@ -1,0 +1,7 @@
+
+7python:S125ë"Remove this commented out code.(⁄‘òâ
+7python:S125º"Remove this commented out code.(±”ú¢
+lpython:S3776"TRefactor this function to reduce its Cognitive Complexity from 29 to the 15 allowed.(Èÿìî
+mpython:S3776 "TRefactor this function to reduce its Cognitive Complexity from 21 to the 15 allowed.(úˇ∂ı
+gpython:S100Ò"ORename method "saveData" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(ê≤óå
+opython:S116ç"WRename this field "summed_P_vector" to match the regular expression ^[_a-z][_a-z0-9]*$.(õÁ√Ç

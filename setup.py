@@ -36,7 +36,7 @@ setup(
     include_package_data=True,
     keywords='simple',
     name='simple',
-    packages=find_packages(include=['simple']),
+    packages=find_packages(include=['simple', 'simple/utils', 'simple/results']),
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,

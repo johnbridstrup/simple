@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/simple/utils" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/simple" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/simple/results" />
+    </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (simple)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-  <component name="TemplatesService">
-    <option name="TEMPLATE_FOLDERS">
-      <list>
-        <option value="$MODULE_DIR$/.eggs/PyScaffold-3.1-py3.7.egg/pyscaffold/templates" />
-      </list>
-    </option>
   </component>
   <component name="TestRunnerService">
     <option name="projectConfiguration" value="pytest" />
