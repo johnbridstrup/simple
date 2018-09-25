@@ -1,8 +1,9 @@
 import os
 import plistlib as pll
 from itertools import product
-
 import simulations as sim
+import sys
+import click
 
 # ! ==============================================================================
 # JUST CHANGE THIS FILE NAME NOT THE PATHS
@@ -59,30 +60,36 @@ fsw = [10 ** i for i in [int(j) for j in range(f[0], f[1], f[2])]]
 k = (-5, -2, 1)
 params['proteins']['monomers'] = mons
 ksw = [10.0 ** i for i in [int(j) for j in range(k[0], k[1], k[2])]]
-for aa, kk in product(asw, ksw):
-    print(aa, kk)
-    rates['addition'] = aa
-    rates['coagulation'] = aa
-    rates['subtraction'] = 10.0 ** -3
-    rates['fragmentation'] = 10.0 ** -3
-    ext = "_aa_{}_bb_{}_kk_{}.strup".format(aa, 10 ** -3, kk)
-    # ext2="_aa_{}_kk_{}.up".format(aa,kk)
-    fn = runs_name + ext
-    # fn2=runs_name+ext2
-    rates['nucleation'] = kk
-    params['rates'] = rates
-    params['simulation']['runs'] = runs_num
-    # params['simulation'][]
-    os.makedirs(runs_dir + fn + "/", exist_ok=True)
-    os.makedirs(runs_dir + fn + "/averaged/", exist_ok=True)
-    with open(utils_dir + 'input.data', 'wb') as f:
-        pll.dump(params, f)
-    with open(runs_dir + fn + "/input.data", 'wb') as f:
-        pll.dump(params, f)
-    for i in range(1, runs_num + 1):
-        ## IF EVERYTHING BREAKS
-        # sim.simulation(runs_dir + fn + "/" + fn + "_" + str(i) + ".json")
-        if i < 9:
-            sim.simulation(runs_dir + fn + "/" + fn + "_0" + str(i) + ".json")
-        else:
-            sim.simulation(runs_dir + fn + "/" + fn + "_" + str(i) + ".json")
+
+@click.command()
+def main(args=None):
+    for aa, kk in product(asw, ksw):
+        print(aa, kk)
+        rates['addition'] = aa
+        rates['coagulation'] = aa
+        rates['subtraction'] = 10.0 ** -3
+        rates['fragmentation'] = 10.0 ** -3
+        ext = "_aa_{}_bb_{}_kk_{}.strup".format(aa, 10 ** -3, kk)
+        # ext2="_aa_{}_kk_{}.up".format(aa,kk)
+        fn = runs_name + ext
+        # fn2=runs_name+ext2
+        rates['nucleation'] = kk
+        params['rates'] = rates
+        params['simulation']['runs'] = runs_num
+        # params['simulation'][]
+        os.makedirs(runs_dir + fn + "/", exist_ok=True)
+        os.makedirs(runs_dir + fn + "/averaged/", exist_ok=True)
+        with open(utils_dir + 'input.data', 'wb') as f:
+            pll.dump(params, f)
+        with open(runs_dir + fn + "/input.data", 'wb') as f:
+            pll.dump(params, f)
+        for i in range(1, runs_num + 1):
+            ## IF EVERYTHING BREAKS
+            # sim.simulation(runs_dir + fn + "/" + fn + "_" + str(i) + ".json")
+            if i < 9:
+                sim.simulation(runs_dir + fn + "/" + fn + "_0" + str(i) + ".json")
+            else:
+                sim.simulation(runs_dir + fn + "/" + fn + "_" + str(i) + ".json")
+
+if __name__ == "__main__":
+    sys.exit(main()) # pragma: no cover
