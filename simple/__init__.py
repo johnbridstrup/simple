@@ -4,7 +4,7 @@
 
 __author__ = """John Bridstrup"""
 __email__ = 'john.bridstrup@gmail.com'
-__version__ = '__version__ = '0.1.6''
+__version__ = '0.1.5'
 
 # import Data
 # import data_analysis
