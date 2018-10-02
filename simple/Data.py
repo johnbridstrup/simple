@@ -9,7 +9,8 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import importlib as port
 from copy import copy
-utils = port.import_module('utils.utes')
+#utils = port.import_module('utils.utes')
+import simple.utils.utes as utils
 
 class DataError(Exception):
     pass
