@@ -14,4 +14,4 @@ deploy:
   on:
     tags: true
     repo: jbrid867/simple
-    python: 3.6
+    python: 3.6 3.7

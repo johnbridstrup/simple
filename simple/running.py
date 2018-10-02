@@ -61,6 +61,10 @@ k = (-5, -2, 1)
 params['proteins']['monomers'] = mons
 ksw = [10.0 ** i for i in [int(j) for j in range(k[0], k[1], k[2])]]
 
+class Simulation:
+    def __init__(self, params=None):
+        pass
+
 @click.command()
 def main(args=None):
     for aa, kk in product(asw, ksw):
