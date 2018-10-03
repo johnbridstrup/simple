@@ -36,7 +36,7 @@ setup(
     include_package_data=True,
     keywords='simple',
     name='simple',
-    packages=find_packages(include=['simple', 'simple/utils', 'simple/results']),
+    packages=find_packages(),
     scripts=['simple/running.py'],
     setup_requires=setup_requirements,
     test_suite='tests',
